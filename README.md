@@ -193,6 +193,7 @@ Area Under the ROC Curve: 0.97
 * Number of men with driving license is higher than women in the data. This further results in the number of interested customers being higher in men than women.
 * Most of the customers whose vehicle wasn't damaged before are not interested in the insurance
 * There is no perfect multicollinearity between any of the independent variables.
+
 #### Models
 * XGBoost Classifier stands out with an accuracy score of 0.89 and area under ROC curve of 0.97.
 * The Random forest and decision tree classifier has almost similar performance (in terms of accuracy and ROC score).
