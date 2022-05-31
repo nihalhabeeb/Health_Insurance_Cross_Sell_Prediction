@@ -30,11 +30,16 @@ The aim is to predict whether a health insurance policy holder will be "Interest
 * There were no missing values to deal with in the dataset.
 * The interest response classes were heavily imbalanced. SMOTE method was used to synthesize new observations to balance the classes.
 
+![RESPONSE VARIABLE](Images/response_variable.png)
+
 ## Exploratory Data Analysis
 * Count of data across categories of various features was studied.
 * Distribution of numerical features was visualized.
 * Relationships between the dependent variable and features was studied.
 * Correlation heatmap was plotted to look for multicollinearity.
+
+![AGE](Images/age_dist.png)
+![VEHICLE AGE](Images/vehicle_age.png)
 
 ## Models
 #### Logistic Regression Model
@@ -84,8 +89,10 @@ F1-Score: 0.82 \
 Area Under the ROC Curve: 0.88
 
 ##### Receiver operating characteristic (ROC) Curve
+![LOGISTIC REGRESSION ROC](Images/logreg_roc.png)
 
 ##### Confusion Matrix
+![LOGISTIC REGRESSION CM](Images/logreg_cm.png)
 
 #### Decision Tree Classifier
 * GridSearchCV was used for hyperparameter tuning and cross validation.
@@ -110,8 +117,10 @@ F1-Score: 0.8 \
 Area Under the ROC Curve: 0.91
 
 ##### Receiver operating characteristic (ROC) Curve
+![DECISION TREE ROC](Images/dectree_roc.png)
 
 ##### Confusion Matrix
+![DECISION TREE CM](Images/dectree_cm.png)
 
 #### Random Forest Classifier
 * The model was fit and the target variable predictions were made.
@@ -134,10 +143,13 @@ F1-Score: 0.85 \
 Area Under the ROC Curve: 0.91
 
 ##### Receiver operating characteristic (ROC) Curve
+![RANDOM FOREST ROC](Images/rf_roc.png)
 
 ##### Confusion Matrix
+![RANDOM FOREST CM](Images/rf_cm.png)
 
 ##### Feature Importance
+![RANDOM FOREST FEATURES](Images/rf_feat.png)
 
 #### XGBoost Classifier
 * The model was fit and the target variable predictions were made.
@@ -161,10 +173,16 @@ F1-Score: 0.89 \
 Area Under the ROC Curve: 0.97
 
 ##### Receiver operating characteristic (ROC) Curve
+![XGBOOST ROC](Images/xgb_roc.png)
 
 ##### Confusion Matrix
+![XGOOST CM](Images/xgb_cm.png)
 
 ##### Feature Importance
+![XGBOOST FEATURES](Images/xgb_feat.png)
+
+#### Model comparison
+![MODEL COMPARISON](Images/model_comparison.PNG)
 
 ## Conclusions
 #### EDA
